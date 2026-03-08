@@ -58,7 +58,7 @@ https://www.youtube.com/watch?v=lBk5YhLZevs&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 > MySQL / Excel / Oracle / SQL Server / MariaDB
 
 ```
-여기에 답을 적어주세요!
+Excel
 ```
 
 
@@ -66,7 +66,8 @@ https://www.youtube.com/watch?v=lBk5YhLZevs&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 <!-- 이번 챕터는 개념정리 없이 MySQL 설치 후 인증사진으로 대체합니다. -->
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1528" height="993" alt="image" src="https://github.com/user-attachments/assets/b48d97fd-d014-4f78-ae3c-c46ecc76fbc3" />
+
 
 
 ## 3. 건물을 짓기 위한 설계도: 데이터베이스 모델링
@@ -85,17 +86,27 @@ https://www.youtube.com/watch?v=lBk5YhLZevs&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 ## 4. 데이터베이스 시작부터 끝까지 
 
 <!-- 이번 챕터는 개념정리 없이 실습 인증사진으로 대체합니다. 강의를 수강하고, 실습 과정이 보이도록 인증사진 3-4장을 아래에 제출해주세요. -->
+<img width="1239" height="842" alt="image" src="https://github.com/user-attachments/assets/498192f9-b394-4d3b-9569-eefa2aaf3292" />  
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1222" height="907" alt="image" src="https://github.com/user-attachments/assets/b58b2cbb-1bd0-411e-9070-12da8c914c66" />  
+
+ <img width="1398" height="941" alt="image" src="https://github.com/user-attachments/assets/4ea8e335-664a-4a65-9537-786f9c2e7d3c" />  
+
+
 
 
 ## 5. 데이터베이스 개체
 
 <!-- 데이터베이스 개체에 관해 배우게 된 점을 적어주세요. -->
 
+테이블 이외에도 뷰, 인덱스, 스토어드 프로시저 등을 통해 속도, 편리성 등을 높이고 데이터 분석효율을 높일 수 있다는 것을 배움.
 <!-- 인덱스, 뷰, 스토어드 프로시저 실습을 각각 진행한 후, 각 실습에 대한 인증 사진을 1장씩 제출해 주세요. -->
+<img width="1654" height="1027" alt="image" src="https://github.com/user-attachments/assets/d7b8513d-6274-4a42-8fc9-34700e62430a" />  
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1731" height="1044" alt="image" src="https://github.com/user-attachments/assets/7b05d1a6-76a1-4e72-a720-fc8b8b3013be" />  
+
+<img width="1166" height="717" alt="image" src="https://github.com/user-attachments/assets/87728cc5-8500-453e-adf6-8df8aa8b9592" />
+
 
 ---
 
