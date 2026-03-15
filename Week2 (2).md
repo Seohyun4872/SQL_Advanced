@@ -68,13 +68,35 @@ WHERE ________;
 ```
 
 ```
-여기에 답을 적어주세요!
+1번  
+SQL에서는 비교 연산자에 ==를 사용하지 않고, 그냥 = 를 사용함!!(파이썬 등과 헷갈리지 말기!!)
 ```
 
 
 ## 2. 좀 더 깊게 알아보는 SELECT문
 
 <!-- ORDER BY절과 GROUP BY절에 관해 배우게 된 점을 적어주세요. -->
+**order by**
+Order by 절은 select랑 같이 보통 쓰이면서, 조회결과가 일정한 기준의 순서로 출력되도록 하는 함수  
+특정컬럼을 기준으로 오름차순은 ASC, 내림차순은 DESC를 사용하고 아무것도 없으면 default로 ASC로 출력됨.  
+```
+EX) SELECT *  
+FROM student  
+ORDER BY grade ASC, name ASC;  
+> 성적을 기준으로 오름차순 정렬을 먼저하고, 그 중 동일 성적이 있다면 이름 기준으로 오름차순 정렬하도록 출력하는 것  
+```
+
+**GROUP BY**
+GROUP BY절은 단순히 결과를 정렬하는 것이 아니라, 같은 값을 가진 행들을 하나의 그룹으로 묶는 기능임.  
+그룹으로 묶어줘야 하기에 order by랑은 다르게 주로 집계함수들(SUM, AVG, MIN 등)과 함께 보통 사용됨.  
+```
+EX)
+SELECT department, COUNT(*)  
+FROM employee  
+GROUP BY department;  
+> department가 같은 행들끼리 묶어서 각 부서별 몇명이 있는지 계산  
+> 즉, 개별 행이 아닌 그룹별 요약결과를 group by를 통해 확인 가능한 것.  
+```
 
 > **확인문제: 다음 표는 주요 집계함수를 정리한 것입니다. 각 설명에 해당하는 올바른 함수명을 기호에 맞게 작성하세요.**
 
@@ -89,16 +111,34 @@ WHERE ________;
 
 ```
 여기에 답을 적어주세요!
-(ㄱ) 
-(ㄴ) 
-(ㄷ) 
-(ㄹ) 
+(ㄱ) AVG()
+(ㄴ) MIN()
+(ㄷ) COUNT()
+(ㄹ) COUNT(DISTINCT __ )
 ```
 
 
 ## 3. 데이터 변경을 위한 SQL문
 
 <!-- INSERT문, UPDATE문, DELETE문에 관해 배우게 된 점을 적어주세요. -->
+```
+INSERT: 새로운 데이터를 데이터베이스에 저장할 때 사용함.
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+```
+```
+UPDATE: 이미 저장되어 있는 기존 데이터를 수정할 때 사용  
+UPDATE table_name
+SET column1 = value1
+WHERE condition;
+> SET으로 수정할 값을 지정하고, WHERE 조건을 사용하여 특정 행만 수정하게 조건을 걸어두는 건데 where을 쓰지 않을 시 모든 행이 수정될 수 있음.
+```
+```
+DELETE: 테이블에 저장된 데이터를 삭제할 때 사용  
+DELETE FROM table_name  
+WHERE condition;  
+> 테이블 구조는 그대로 남음. 
+```
 
 > **확인문제: 다음이 설명하는 SQL이 무엇인지 쓰세요.**
 
@@ -109,7 +149,13 @@ WHERE ________;
 ```
 
 ```
-여기에 답을 적어주세요!
+TRUNCATE  
+TRUNCATE TABLE table_name; 의 형태로 사용
+
+특징    
+* 모든 행을 빠르게 삭제  
+* DELETE보다 성능이 빠름  
+* 테이블 구조(컬럼, 테이블)는 유지  
 ```
 
 
